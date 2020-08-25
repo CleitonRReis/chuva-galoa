@@ -20,6 +20,11 @@ function verMais() {
 
 function seeMore() {
 
+    let autor = document.getElementById('autor');
+    let autor1 = document.getElementById('autor1');
+    let coautor = document.getElementById('coautor');
+    let coautor1 = document.getElementById('coautor1');
+
     let more = document.getElementById('more');
     let discussao = document.getElementById('discussao');
     let pergunta = document.getElementsByClassName('pergunta')[1];
@@ -35,6 +40,10 @@ function seeMore() {
         ideias.style.height = '1230px'
         like.innerHTML = '4 likes'
         res.innerHTML = '4 respostas'
+        autor.style.display = 'block'
+        autor1.style.display = 'block'
+        coautor.style.display = 'block'
+        coautor1.style.display = 'block'
     } else {
         more.style.display = 'none';
         discussao.style.display = 'inline';
@@ -42,5 +51,9 @@ function seeMore() {
         ideias.style.height = '620px'
         like.innerHTML = '1 like'
         res.innerHTML = '1 resposta'
+        autor.style.display = 'none'
+        autor1.style.display = 'none'
+        coautor.style.display = 'none'
+        coautor1.style.display = 'none'
     }
 }
